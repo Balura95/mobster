@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shitster Login</title>
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <!-- Your custom stylesheet if any -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m8 l6 offset-m2 offset-l3">
+        <div class="card z-depth-3 fade-in">
+          <div class="card-content center-align">
+            <img src="img/logo.png" alt="App Logo" style="max-width: 150px; margin-bottom: 20px;">
+            <span class="card-title">Willkommen bei Shitster</span>
+            <p>Bitte logge dich bei Spotify ein, um fortzufahren.</p>
+          </div>
+          <div class="card-action center-align">
+            <button id="spotify-login" class="btn-large waves-effect waves-light blue">
+              <i class="material-icons left">music_note</i> Login mit Spotify
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Materialize JavaScript (dependencies, jQuery is not needed for Materialize 1.0+) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Your script file -->
+  <script src="script.js" defer></script>
+  <!-- Other scripts: html5-qrcode, Spotify Web Playback SDK, etc. -->
+  <script src="https://unpkg.com/html5-qrcode"></script>
+</body>
+</html>

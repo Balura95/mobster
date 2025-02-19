@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shitster Player</title>
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Google Fonts & Material Icons -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- External Scripts: Load these in the head -->
+  <script src="https://unpkg.com/html5-qrcode"></script>
+  <script src="https://sdk.scdn.co/spotify-player.js"></script>
+  
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body>
+  <!-- Player Area -->
+  <div id="player-area">
+    <div class="card z-depth-3 fade-in">
+      <div class="card-content center-align">
+        <h4 id="title" class="card-title">Shitster Player</h4>
+        <div id="qr-reader" class="qr-box" style="margin:20px auto;"></div>
+      </div>
+      <div class="card-action center-align">
+        <!-- Only the "Scan Next" button remains -->
+        <button id="scan-next" class="btn-large waves-effect waves-light blue" style="display:none;">
+          Nächsten Song scannen
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reset Button fixed at the bottom center -->
+  <button id="reset-app" class="btn reset-btn">App zurücksetzen</button>
+
+  <!-- Custom Player JS -->
+  <script src="player.js" defer></script>
+</body>
+</html>

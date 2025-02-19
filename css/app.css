@@ -1,0 +1,901 @@
+/* iOS Cordova Tweak */
+.device-cordova.device-ios {
+  height: 100vh;
+}
+
+/* Custom color theme properties */
+:root {
+  --f7-theme-color: #bbd01b;
+  --f7-theme-color-rgb: 187, 208, 27;
+  --f7-theme-color-shade: #9bac16;
+  --f7-theme-color-tint: #cfe430;
+}
+
+/* Your app custom styles here */
+
+/* NAVIGATION-DRAWER SCREEN */
+.sidenav-title {
+  margin-left: 60px;
+}
+
+/* If width < 767px = change navbar height */
+@media only screen and (max-width: 767px) {
+  .nav-drawer {
+    width: 84.44%;
+  }
+  .nav-item {
+    width: 84.44%;
+  }
+}
+.navigation-drawer {
+  height: 50px;
+}
+/* HOME-VIEW SCREEN */
+.call-a-waiter,
+.dnd {
+  background-color: --f7-theme-color;
+}
+
+/*Preorder screen flex container*/
+.button-container {
+  /* padding: 25px; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/*DISH OVERVIEW SCREEN*/
+
+.add_btns {
+  color: #bbd01b;
+  cursor: pointer;
+}
+
+/*QR Code Picture adjustment*/
+.qr-code {
+  height: 50px;
+  width: 50px;
+}
+
+.buttons-preorder {
+  width: 50vw;
+  height: 50vw;
+  margin: 5px;
+}
+
+/*text align payment screen*/
+.dish {
+  float: left;
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: -10px;
+  margin-right: -10px;
+  overflow: hidden;
+  border-style: inset;
+  color: #3a3b38;
+  border-width: 1px;
+}
+
+.price {
+  float: right;
+}
+
+/* make elements full width */
+.full-width {
+  width: 100%;
+}
+
+/*style for confirm button*/
+.confirm-button {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.center-button {
+  display: flex;
+  justify-content: center;
+  margin: 16px;
+}
+
+/*alignment of payment screen*/
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.payment-options {
+  margin-bottom: 50px;
+}
+
+/* ORDER SCREEN */
+
+/*extra height so bottom button doesn't cover important content*/
+
+#pastOrders-page {
+  padding: 0 !important;
+  margin-bottom: 81px;
+}
+
+#pastOrders-list,
+#order-list,
+#orderHistory-list {
+  padding: 0;
+  padding-bottom: 5px;
+}
+
+#pastOrders-list {
+  margin-top: 10px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+/*style for past-orders button*/
+#filter-button {
+  right: 0px;
+  margin: auto;
+  margin-right: 5vw;
+}
+.right #filter-icon-on {
+  display: inline;
+}
+
+.right #filter-icon-off {
+  display: none;
+}
+
+/*style for order icon*/
+.orders-icon {
+  padding: 0px 1.5px 1px 2.5px;
+}
+
+#order-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*style for serving-counter*/
+#serving-count1,
+#serving-count2 {
+  font-size: 18px;
+  font-weight: lighter;
+  color: rgba(0, 0, 0, 0.8);
+  background-color: #9b9c95;
+  border-radius: 5.5px;
+  width: 29px;
+  height: 27px;
+  margin-top: 7px;
+  margin-left: -25px;
+}
+
+/*style for order-price*/
+.order-price {
+  margin: 5px 15px -5px 0px;
+}
+
+#totalPast {
+  margin: 0px 0px 0px 0px;
+}
+
+#restaurant-img {
+  border-radius: 5.5px;
+}
+
+#accordian-icon {
+  float: right;
+  color: var(--f7-list-item-after-text-color);
+}
+
+#totalPastPrice {
+  margin-right: 15px;
+}
+
+.accordian-title {
+  margin-bottom: 0px;
+}
+
+/*style for sub-total row*/
+#sub-total {
+  margin: 5px 0px 5px 0px;
+}
+#sub-price,
+#price {
+  margin-right: 15px;
+}
+
+/*style for action button at bottom of screen row*/
+#order-button,
+#confirm-button,
+#pay-button,
+#paylater-button,
+#add-button,
+#viewOrder-butto {
+  width: 92vw;
+  position: fixed;
+  bottom: 75px;
+
+  /* centering element */
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+/*style for next-button on settings screen*/
+#settings-button,
+#settings-button-diet {
+  width: 92vw;
+
+  /* centering element */
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+#reset {
+  margin-top: calc(100vh - 440.9px);
+}
+
+#pay-button {
+  bottom: 150px;
+}
+
+/* PAST-ORDER SCREEN */
+
+/*style for order-again button*/
+.order-again {
+  margin: 15px 0px -15px 0px;
+  font-size: 11px;
+}
+
+/*style for restaurant-image*/
+.detailed {
+  margin: 5px 0px 5px 0px;
+  border-radius: 50%;
+}
+
+/*height of detailed-view image*/
+.picture-wrapper {
+  height: 50vh;
+}
+
+/* DETAILED-VIEW SCREEN */
+
+.detailed-title {
+  margin-top: 10px;
+}
+
+#detailed-stars {
+  margin-left: 15px;
+}
+/*extra height so button doesn't cover important content*/
+#last-card {
+  min-height: 160px;
+}
+
+#item-counter {
+  /* centering element */
+  margin-left: calc(50% - 62.5px);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.detailed-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.transparent-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+}
+/* If width < 767px = change navbar height */
+@media only screen and (max-width: 767px) {
+  .transparent-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 56px;
+  }
+}
+.t_navbar-background {
+  position: absolute;
+  opacity: 0.1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  background: var(--f7-navbar-bg-color);
+  background-image: var(--f7-navbar-bg-image, var(--f7-bars-bg-image));
+  background-color: var(--f7-navbar-bg-color, var(--f7-bars-bg-color));
+  transition-property: transform;
+}
+.t_navbar-inner {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  color: #9bac16;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 15px;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+.picture-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/*Style Cards CSS*/
+
+.demo-card-header-pic .card-header {
+  height: 40vw;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  position: relative;
+}
+
+.demo-card-header-pic .card-content-padding .date {
+  color: #8e8e93;
+}
+
+.demo-facebook-card .card-header {
+  display: block;
+  padding: 10px;
+}
+
+.demo-facebook-card .demo-facebook-avatar {
+  float: left;
+}
+
+.demo-facebook-card .demo-facebook-name {
+  margin-left: 44px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.demo-facebook-card .demo-facebook-date {
+  margin-left: 44px;
+  font-size: 13px;
+  color: #8e8e93;
+}
+
+.demo-facebook-card .card-footer {
+  background: #fafafa;
+}
+
+.demo-facebook-card .card-footer a {
+  color: #81848b;
+  font-weight: 500;
+}
+
+.demo-facebook-card .card-content img {
+  display: block;
+}
+
+.demo-facebook-card .card-content-padding {
+  padding: 15px 10px;
+}
+
+.demo-facebook-card .card-content-padding .likes {
+  color: #8e8e93;
+}
+
+/*Onboarding Screens*/
+
+/*Screen 1*/
+.page-onboarding {
+  position: relative;
+}
+
+.o-transparent-nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 56px;
+}
+
+.o-t_navbar-background {
+  position: absolute;
+  opacity: 0.05;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  background: var(--f7-navbar-bg-color);
+  background-image: var(--f7-navbar-bg-image, var(--f7-bars-bg-image));
+  background-color: var(--f7-navbar-bg-color, var(--f7-bars-bg-color));
+  transition-property: transform;
+}
+.o-t_navbar-inner {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 10px;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+
+.onboarding-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.logo-container {
+  flex: 1 1 auto;
+  z-index: 10;
+  vertical-align: middle;
+}
+
+.onboarding-title-image {
+  margin-top: 10vh;
+  width: 293px;
+  height: 90px;
+  transform: rotate(1.59deg);
+}
+
+#splash {
+  position: fixed;
+  bottom: 3vh;
+  height: 80vh;
+  left: 5vw;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/* If width > 767px = change navbar height */
+@media only screen and (min-width: 767px) {
+  #splash {
+    position: fixed;
+    bottom: 4vh;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.onboarding-button {
+  background: #3a3b38;
+  color: #bbd01b;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
+  margin-bottom: 5vh;
+}
+
+/*Screen 2*/
+
+.onboarding-toolbar {
+  height: 56px;
+}
+.onboarding-titles {
+  position: flex;
+  text-align: center;
+  margin-top: 16px;
+  font-size: large;
+}
+
+.tile-container {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+}
+
+/*diet cards on onboarding screen and settings*/
+#diet-cards,
+#diet-cards-settings,
+#allergy-cards,
+#allergy-cards-settings {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: auto;
+}
+
+.diet-image,
+.allergy-image {
+  height: 103px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/*diet cards on onboarding screen*/
+#allergy-cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: auto;
+}
+
+.diet-align {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.allergy-align {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*dishoverview chips*/
+
+.chips-active {
+  /* On Surface / Disabled */
+  color: red;
+
+  background: rgba(187, 208, 27, 0.3);
+  /* Alley light green */
+}
+
+.chip-outline {
+  margin-bottom: 15px;
+}
+
+.chip-container {
+  margin-top: 40px;
+  padding: 5vh 10vw;
+  /* height: calc(100vh - 156px); */
+}
+
+#done {
+  margin-right: 15px;
+}
+
+/*Feedback Screen*/
+
+.feedback {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.page-feedback {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedcard {
+  position: relative;
+  width: 77%;
+  height: 60%;
+  font-size: var(--f7-card-font-size);
+  margin-top: var(--f7-card-margin-vertical);
+  margin-bottom: var(--f7-card-margin-vertical);
+  margin-left: calc(
+    var(--f7-card-margin-horizontal) + var(--f7-safe-area-left)
+  );
+  margin-right: calc(
+    var(--f7-card-margin-horizontal) + var(--f7-safe-area-right)
+  );
+  box-shadow: var(--f7-card-box-shadow);
+}
+
+.feed-background {
+  position: absolute;
+  opacity: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  border-radius: var(--f7-card-border-radius);
+  background: var(--f7-card-bg-color);
+  background-color: var(--f7-card-bg-color, var(--f7-card-bg-color));
+}
+.feed-inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding: 10px;
+  z-index: 10;
+}
+
+/* Position text in the middle of the page/image */
+
+.feedtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  /* final color palette/white */
+  color: #fcfef2;
+  mix-blend-mode: normal;
+  margin: 0;
+}
+
+.feedcontent-1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  /* Burntpizza/Burntpizza white */
+  color: #f8f3df;
+  margin-left: 20px;
+}
+
+.feedcontent-2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  /* final color palette/medium Light brown */
+  color: #9b9c95;
+  margin-left: 20px;
+}
+
+.rating {
+  align-self: center;
+}
+.feedbutton {
+  align-self: center;
+  width: 95%;
+}
+
+.feedcontent-3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration-line: underline;
+  /* final color palette/white */
+  color: #fcfef2;
+  mix-blend-mode: normal;
+  margin-top: 10px;
+}
+
+#common-toolbar {
+  display: none;
+}
+
+.chip-margin {
+  margin: 5px;
+}
+
+/* .allergy-container{
+
+} */
+
+.allergy-warning {
+  display: block;
+}
+
+.allergy-badge-overview {
+  border-radius: 5vh;
+  padding: 10px;
+  background: white;
+  color: red;
+  position: absolute;
+  top: 1vh;
+  right: 1vh;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.allergy-badge-detail {
+  border-radius: 3.5vh;
+  padding: 10px;
+  background: white;
+  color: red;
+  display: inline;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#allergy-paragraph {
+  padding: 10px;
+  line-height: 5 em;
+}
+
+.vegan-banner {
+  display: block;
+}
+
+.vegan-badge-overview {
+  border-radius: 5vh;
+  padding: 10px;
+  background: white;
+  color: green;
+  position: absolute;
+  bottom: 1vh;
+  right: 1vh;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/*=====================================TIC TAC TOE GAME======================================*/
+/* sources: https://github.com/WebDevSimplified/JavaScript-Tic-Tac-Toe.git */
+
+.bod {
+  margin: 0;
+  --cell-size: 100px;
+  --mark-size: calc(var(--cell-size) * 0.9);
+}
+
+.board {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, auto);
+}
+
+.cell {
+  width: var(--cell-size);
+  height: var(--cell-size);
+  border: 1px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.cell:first-child,
+.cell:nth-child(2),
+.cell:nth-child(3) {
+  border-top: none;
+}
+
+.cell:nth-child(3n + 1) {
+  border-left: none;
+}
+
+.cell:nth-child(3n + 3) {
+  border-right: none;
+}
+
+.cell:last-child,
+.cell:nth-child(8),
+.cell:nth-child(7) {
+  border-bottom: none;
+}
+
+.cell.x,
+.cell.circle {
+  cursor: not-allowed;
+}
+
+.cell.x::before,
+.cell.x::after,
+.cell.circle::before {
+  background-color: #fff;
+}
+
+.board.x .cell:not(.x):not(.circle):hover::before,
+.board.x .cell:not(.x):not(.circle):hover::after,
+.board.circle .cell:not(.x):not(.circle):hover::before {
+  background-color: #333;
+}
+
+.cell.x::before,
+.cell.x::after,
+.board.x .cell:not(.x):not(.circle):hover::before,
+.board.x .cell:not(.x):not(.circle):hover::after {
+  content: "";
+  position: absolute;
+  width: calc(var(--mark-size) * 0.15);
+  height: var(--mark-size);
+}
+
+.cell.x::before,
+.board.x .cell:not(.x):not(.circle):hover::before {
+  transform: rotate(45deg);
+}
+
+.cell.x::after,
+.board.x .cell:not(.x):not(.circle):hover::after {
+  transform: rotate(-45deg);
+}
+
+.cell.circle::before,
+.cell.circle::after,
+.board.circle .cell:not(.x):not(.circle):hover::before,
+.board.circle .cell:not(.x):not(.circle):hover::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+
+.cell.circle::before,
+.board.circle .cell:not(.x):not(.circle):hover::before {
+  width: var(--mark-size);
+  height: var(--mark-size);
+}
+
+.cell.circle::after,
+.board.circle .cell:not(.x):not(.circle):hover::after {
+  width: calc(var(--mark-size) * 0.7);
+  height: calc(var(--mark-size) * 0.7);
+  background-color: #121212;
+}
+
+.winning-message {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 5rem;
+  flex-direction: column;
+}
+
+.winning-message button {
+  font-size: 3rem;
+  background-color: #fff;
+  border: 1px solid #121212;
+  padding: 0.25em 0.5em;
+  cursor: pointer;
+  width: 92vw;
+}
+
+.winning-message button:hover {
+  background-color: #121212;
+  color: #fff;
+  border-color: #fff;
+}
+
+.winning-message.show {
+  display: flex;
+}
+/*=====================================TIC TAC TOE GAME:footer======================================*/

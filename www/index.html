@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hitster Clone</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="game-container">
+    
+    <!-- Spotify Login Button -->
+    <div id="login-area">
+        <h1>Bitte unten bei Spotify einloggen</h1>
+        <button id="spotify-login">Login with Spotify</button>
+    </div>
+
+    <!-- You can later hide/show additional elements once the user is logged in -->
+    <div id="player-area" style="display:none;">
+        <p>QR-Code scannen, dann auf Play drücken</p>
+        <div id="qr-reader" style="width:300px; margin: auto;"></div>
+        <button id="start-playback">Play</button>
+        <button id="stop-button">Stop</button>
+    </div>
+  </div>
+  <script src="https://unpkg.com/html5-qrcode"></script>
+  <script src="https://sdk.scdn.co/spotify-player.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Leichter, spannender Farbverlauf – nicht zu kräftig */
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden; /* Kein Scrollen */
+  }
+  
+  /* Player Area: Hier wird kein zusätzlicher Container mehr verwendet,
+     stattdessen zentriert der Inhalt direkt */
+  #player-area {
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  /* Card (wird für den Player genutzt) */
+  .card {
+    background: rgba(255, 255, 255, 0.98);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  /* Button Large (für Scan-Next) */
+  .btn-large {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    height: 45px;           /* feste Höhe */
+    line-height: 45px;      /* sorgt dafür, dass der Text vertikal zentriert wird */
+    padding: 0 20px;        /* horizontale Padding, vertikales Padding entfällt wegen der fixen Höhe */
+    font-size: 1.1rem;
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+    box-sizing: border-box;
+  }
+  
+  .btn-large:hover {
+    background-color: #1976D2;
+  }
+  
+  
+  /* Reset Button: Fixiert in der Mitte am unteren Rand */
+  .reset-btn {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4px 6px;
+    font-size: 0.7em;
+    background-color: #e53935;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    opacity: 0.9;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+    display: flex;            /* Damit der Text zentriert ist */
+    align-items: center;      /* Vertikale Zentrierung */
+    justify-content: center;  /* Horizontale Zentrierung */
+  }
+  
+  .reset-btn:hover {
+    opacity: 1;
+  }
+  
+  /* Fade-In Animation */
+  .fade-in {
+    animation: fadeIn 1s ease-out forwards;
+    opacity: 0;
+  }
+  
+  
+
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
+  
+  /* Responsive Anpassungen */
+  @media (max-width: 600px) {
+    #player-area {
+      width: 95%;
+      margin: 10px auto;
+    }
+  }
+  
